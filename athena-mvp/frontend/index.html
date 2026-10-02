@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATHENA | Threat Hunting Console</title><link rel="stylesheet" href="css/styles.css"></head><body>
+<section id="login" class="center"><form id="loginForm" class="card login">
+  <h1 class="brand">ATHENA</h1><p class="muted">Autonomous Cyber Threat Hunting and Evolving Neural AI</p>
+  <input id="u" aria-label="Username" placeholder="Username" autocomplete="username">
+  <input id="p" type="password" aria-label="Password" placeholder="Password" autocomplete="current-password">
+  <p id="loginErr" class="err" role="alert"></p><button class="btn" id="loginBtn">Sign in</button>
+  <p class="muted small">Demo: admin / athena123. Simulated data only.</p></form></section>
+<div id="app" hidden>
+  <aside id="side"><h1 class="brand">ATHENA</h1><p class="muted small">Threat hunting console</p><nav id="nav"></nav></aside>
+  <div class="main">
+    <header><button id="menu" class="btn ghost" aria-label="Open menu">☰</button>
+      <input id="search" aria-label="Search alerts" placeholder="Search alerts, IPs…">
+      <span id="engine" class="pill ok">● Engine online</span>
+      <button class="btn" id="runBtn" data-a="run">Run Analysis</button>
+      <button class="btn ghost" data-a="nav" data-p="Live Alerts" aria-label="Notifications">🔔</button>
+      <div class="who"><span id="uname"></span><button class="link" data-a="logout" id="urole"></button></div></header>
+    <div id="toast" class="toast" role="status" hidden></div><main id="view"></main></div></div>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/charts.js"></script><script src="js/app.js"></script></body></html>
